@@ -17,7 +17,7 @@ output "Public IPs" {
 }
 
 output "Public Security Groups" {
-  value = "${module.networking.public_sg)}"
+  value = "${module.networking.public_sg}"
 }
 
 # ------------------- compute outputs-------------------
