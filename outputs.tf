@@ -9,11 +9,11 @@ output "Bucket Name" {
 # ------------------- networking outputs-------------------
 
 output "Public Subnets" {
-  value = "${join(", ", module.networking.public_subnets")}"
+  value = "${join(", ", module.networking.public_subnets)}"
 }
 
 output "Public IPs" {
-  value = "${join(", ", module.networking.subnet_ips")}"
+  value = "${join(", ", module.networking.subnet_ips)}"
 }
 
 output "Public Security Groups" {
