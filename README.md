@@ -61,6 +61,7 @@ vagrant up
 Vagrant up will run `scripts/provision.sh` that will install:
 
 - Terraform
+- AWS CLI
 
 ## How to Build
 
