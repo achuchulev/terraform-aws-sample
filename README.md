@@ -72,10 +72,10 @@ sudo su -
 cd /vagrant
 ```
 
-#### Initialize Terraform
+#### Create SSH key for current user
 
 ```
-terraform init
+ssh-keygen
 ```
 
 #### Export your AWS access credentials
@@ -83,6 +83,12 @@ terraform init
 ```
 export AWS_ACCESS_KEY_ID=your_aws_access_key
 export AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
+```
+
+#### Initialize Terraform
+
+```
+terraform init
 ```
 
 #### Deploy Environment
