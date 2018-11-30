@@ -88,13 +88,18 @@ terraform plan
 teraform apply
 ```
 
-#### Destroy Environment
+## How to test
+
+Open Public Instance IPs from Terraform output with your browser to check which Subnet for Firewall each server use
+
+
+## Destroy Environment
 
 ```
 terraform destroy
 ```
 
-### High Level Design
+#### High Level Design
 
 ![Alt text](./pics/high_level_design.png?raw=true "High Level Design")
 
