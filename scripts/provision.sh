@@ -2,7 +2,8 @@
 
 # install terraform
 which wget unzip &>/dev/null || {
-  apt-get install -y wget unzip
+  sudo apt-get update
+  sudo apt-get install -y wget unzip
 }
 
 which terraform &>/dev/null || {
