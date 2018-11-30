@@ -97,6 +97,7 @@ Open Public Instance IPs from Terraform output with your browser to check which 
 
 ```
 terraform destroy
+aws s3 rb s3://ac-terraform-remote-state --force
 ```
 
 #### High Level Design
