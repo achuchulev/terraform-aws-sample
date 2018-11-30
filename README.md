@@ -1,6 +1,6 @@
 # Build infrastructure on AWS with Terraform using modules and S3 remote backend for terraform state
 
-### Terraform apply will create two EC2 instances on AWS that host httpd web server to show which Firewall Subnet is used
+### Terraform apply will create two EC2 instances on AWS that host httpd web server to show Subnet for Firewall
 
 #### Prerequisites
 
