@@ -1,8 +1,6 @@
-# Build a sample infrastructure on AWS with Terraform
+# Build infrastructure on AWS with Terraform using modules and S3 remote backend for terraform state
 
-### Build resources on AWS with Terraform using modules and S3 remote backend for terraform state. 
-
-#### Terraform apply will create two EC2 instances on AWS that host httpd web server to show which Firewall Subnet is used
+### Terraform apply will create two EC2 instances on AWS that host httpd web server to show which Firewall Subnet is used
 
 #### Prerequisites
 
@@ -64,7 +62,7 @@ Vagrant up will run `scripts/provision.sh` that will install:
 
 - Terraform
 
-## How to build
+## How to Build
 
 #### ssh to vagrant box and go to repo folder
 
@@ -74,17 +72,23 @@ sudo su -
 cd /vagrant
 ```
 
-#### Initialize terraform
+#### Initialize Terraform
 
 ```
 terraform init
 ```
 
-#### Deploy environment
+#### Deploy Environment
 
 ```
 terraform plan
 teraform apply
+```
+
+#### Destroy Environment
+
+```
+terraform destroy
 ```
 
 ### High Level Design
