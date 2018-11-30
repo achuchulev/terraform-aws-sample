@@ -6,6 +6,7 @@
 
 - vagrant
 - git
+- AWS subscription
 - virtualbox
 
 #### AWS and Terraform knowledge requirements
@@ -27,28 +28,7 @@
   - Terraform Outputs and the Join Function
   - Terraform Formatting and Remote State
 
-#### Terraform code structure
 
-```
-.
-├── compute
-│   ├── main.tf
-│   ├── outputs.tf
-│   ├── userdata.tpl
-│   └── variables.tf
-├── main.tf
-├── networking
-│   ├── main.tf
-│   ├── outputs.tf
-│   └── variables.tf
-├── outputs.tf
-├── storage
-│   ├── main.tf
-│   ├── outputs.tf
-│   └── variables.tf
-├── terraform.tfvars
-└── variables.tf
-```
 
 ## Get the repo and run lab
 
@@ -73,10 +53,15 @@ sudo su -
 cd /vagrant
 ```
 
-#### Create SSH key for current user
+#### Configure AWS CLI
+
+Run `aws configure` to setup _aws cli_ providing following information
 
 ```
-ssh-keygen
+AWS Access Key ID [None]: 
+AWS Secret Access Key [None]: 
+Default region name [None]: 
+Default output format [None]: 
 ```
 
 #### Export your AWS access credentials
@@ -108,3 +93,26 @@ terraform destroy
 ### High Level Design
 
 ![Alt text](./high_level_design.png?raw=true "High Level Design")
+
+#### Terraform code structure
+
+```
+.
+├── compute
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── userdata.tpl
+│   └── variables.tf
+├── main.tf
+├── networking
+│   ├── main.tf
+│   ├── outputs.tf
+│   └── variables.tf
+├── outputs.tf
+├── storage
+│   ├── main.tf
+│   ├── outputs.tf
+│   └── variables.tf
+├── terraform.tfvars
+└── variables.tf
+```
