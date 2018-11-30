@@ -18,3 +18,7 @@ which terraform &>/dev/null || {
   sudo unzip terraform_0.11.10_linux_amd64.zip
   popd
 }
+
+# generate new ssh key for vagrant user
+
+cat /dev/zero | ssh-keygen -q -N ""
