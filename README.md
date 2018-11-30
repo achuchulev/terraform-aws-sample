@@ -99,7 +99,7 @@ terraform destroy
 
 ### High Level Design
 
-![Alt text](./high_level_design.png?raw=true "High Level Design")
+![Alt text](./pics/high_level_design.png?raw=true "High Level Design")
 
 #### Terraform code structure
 
