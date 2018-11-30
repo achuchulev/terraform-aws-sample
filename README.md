@@ -56,10 +56,10 @@ cd /vagrant
 Run `aws configure` to setup _aws cli_ providing following information
 
 ```
-AWS Access Key ID [None]: 
-AWS Secret Access Key [None]: 
-Default region name [None]: 
-Default output format [None]: 
+AWS Access Key ID [None]: your_aws_access_key
+AWS Secret Access Key [None]: your_aws_secret_access_key
+Default region name [None]: us-east-2
+Default output format [None]: json
 ```
 
 #### Create S3 Bucket for remote backend
@@ -77,12 +77,9 @@ export AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 
 #### Initialize Terraform
 
-Run command
-
 ```
 terraform init
 ```
-and confirm you want to use remote S3 backend when prompted
 
 #### Deploy Environment
 
