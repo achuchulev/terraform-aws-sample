@@ -1,6 +1,8 @@
 # Build a sample infrastructure on AWS with Terraform
 
-### The purpose of this repo is to show how to build resources on AWS with Terraform using modules and S3 remote backend for terraform state.
+### Build resources on AWS with Terraform using modules and S3 remote backend for terraform state. 
+
+#### Terraform apply will create two EC2 instances on AWS that host httpd web server to show which Firewall Subnet is used
 
 #### Prerequisites
 
@@ -49,27 +51,6 @@
 ├── terraform.tfvars
 └── variables.tf
 ```
-
-- Storage module
-  - creates S3 bucket with random id
-
-- Networking module creates
-  - VPC
-  - Internet Gateway
-  - Route Tables
-  - Subnets
-
-- Storage module creates
-  - S3 Bucket
-  - Random ID for Bucket
-
-- Compute module creates
-   - EC2 Instances
-   - Key Pair
-
-- Root module
-  - Outputs
-
 
 ## Get the repo and run lab
 
