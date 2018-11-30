@@ -25,7 +25,7 @@ resource "aws_route_table" "tf_public_rt" {
 
   route {
     cidr_block = "0.0.0.0/0"
-    gateway_id = "${aws_internet_gateway.tf_internet_gateway.id}"
+    gateway_id = "${aws_internet_gateway.tf_internet_gateway_id}"
   }
 
   tags {
@@ -34,7 +34,7 @@ resource "aws_route_table" "tf_public_rt" {
 }
 
 resource "aws_default_route_table" "tf_private_rt" {
-  default_route_table_id = "${aws_vpc.tf_vpc.default_route_table.id}"
+  default_route_table_id = "${aws_vpc.tf_vpc.main_route_table_id}"
 
   tags {
     Name = "tf_private"
