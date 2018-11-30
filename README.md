@@ -28,9 +28,7 @@
   - Terraform Outputs and the Join Function
   - Terraform Formatting and Remote State
 
-
-
-## Get the repo and run lab
+### Get the repo and run lab
 
 ```
 git clone https://github.com/achuchulev/terraform-aws-sample.git
@@ -64,6 +62,13 @@ Default region name [None]:
 Default output format [None]: 
 ```
 
+#### Create S3 Bucket for remote backend
+
+```
+aws s3 mb s3://ac-terraform-course-remote-state
+
+```
+
 #### Export your AWS access credentials
 
 ```
@@ -73,9 +78,12 @@ export AWS_SECRET_ACCESS_KEY=your_aws_secret_access_key
 
 #### Initialize Terraform
 
+Run command
+
 ```
 terraform init
 ```
+and confirm you want to use remote S3 backend when prompted
 
 #### Deploy Environment
 
