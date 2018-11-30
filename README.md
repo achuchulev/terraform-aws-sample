@@ -29,6 +29,7 @@
 
 #### Terraform code structure
 
+```
 .
 ├── compute
 │   ├── main.tf
@@ -47,7 +48,7 @@
 │   └── variables.tf
 ├── terraform.tfvars
 └── variables.tf
-
+```
 
 - Storage module
   - creates S3 bucket with random id
@@ -107,4 +108,4 @@ teraform apply
 
 ### High Level Design
 
-
+![Alt text](./high_level_design.png?raw=true "High Level Design")
