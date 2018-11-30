@@ -1,9 +1,15 @@
 #!/bin/bash
 
-# install terraform
-which wget unzip &>/dev/null || {
+# install AWS CLI
+
+which awscli &>/dev/null || {
   sudo apt-get update
-  sudo apt-get install -y wget unzip
+  sudo apt-get install awscli -y
+}
+
+# install Terraform
+which wget unzip &>/dev/null || {
+    sudo apt-get install -y wget unzip
 }
 
 which terraform &>/dev/null || {
