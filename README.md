@@ -40,6 +40,7 @@ Vagrant up will run `scripts/provision.sh` that will install:
 
 - Terraform
 - AWS CLI
+- SSH Key Pair for vagrant user
 
 ## How to Build
 
@@ -47,7 +48,6 @@ Vagrant up will run `scripts/provision.sh` that will install:
 
 ```
 vagrant ssh
-sudo su -
 cd /vagrant
 ```
 
@@ -65,8 +65,7 @@ Default output format [None]:
 #### Create S3 Bucket for remote backend
 
 ```
-aws s3 mb s3://ac-terraform-course-remote-state
-
+aws s3 mb s3://ac-terraform-remote-state
 ```
 
 #### Export your AWS access credentials
